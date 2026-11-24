@@ -1,0 +1,195 @@
+{
+  "format": 1,
+  "restore": {
+    "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Application/Bookshop.Application.csproj": {}
+  },
+  "projects": {
+    "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Application/Bookshop.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Application/Bookshop.Application.csproj",
+        "projectName": "Bookshop.Application",
+        "projectPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Application/Bookshop.Application.csproj",
+        "packagesPath": "/home/nafis-ahamed/.nuget/packages/",
+        "outputPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/nafis-ahamed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Domain/Bookshop.Domain.csproj": {
+                "projectPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Domain/Bookshop.Domain.csproj"
+              },
+              "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Utilities/Bookshop.Utilities.csproj": {
+                "projectPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Utilities/Bookshop.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.426/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Domain/Bookshop.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Domain/Bookshop.Domain.csproj",
+        "projectName": "Bookshop.Domain",
+        "projectPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Domain/Bookshop.Domain.csproj",
+        "packagesPath": "/home/nafis-ahamed/.nuget/packages/",
+        "outputPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/nafis-ahamed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.426/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Utilities/Bookshop.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Utilities/Bookshop.Utilities.csproj",
+        "projectName": "Bookshop.Utilities",
+        "projectPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Utilities/Bookshop.Utilities.csproj",
+        "packagesPath": "/home/nafis-ahamed/.nuget/packages/",
+        "outputPath": "/media/nafis-ahamed/OS/CPS/development/BookShop/backend/Bookshop.Utilities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/nafis-ahamed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.426/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

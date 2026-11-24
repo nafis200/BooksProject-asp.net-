@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HVWzM2Yq8TDjEqVs4c7igC5vXzE5EPIvm9vFfa1Er4U=",
+  "Source": "Bookshop.Api",
+  "BasePath": "_content/Bookshop.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
