@@ -1,11 +1,13 @@
 using Bookshop.Application.DTOs;
 using Bookshop.Application.interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bookshop.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")] // Default: শুধু Admin book create/update/delete করতে পারবে
     public class BookController : ControllerBase
     {
         private readonly IBookServices _bookServices;
@@ -16,6 +18,7 @@ namespace Bookshop.Api.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous] // বই দেখা সবার জন্য খোলা
         [ProducesResponseType(typeof(IReadOnlyList<BookResponseDto>), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAll()
         {
@@ -24,6 +27,7 @@ namespace Bookshop.Api.Controllers
         }
 
         [HttpGet("{id:guid}")]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(BookResponseDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetById(Guid id)

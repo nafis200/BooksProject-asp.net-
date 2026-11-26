@@ -13,6 +13,12 @@ namespace Bookshop.Application.DTOs
         [Required, EmailAddress] string Email,
         [Required] string Password);
 
+    // JwtTokenGenerator ja banay: signed token + kokhon expire hobe
+    public record AccessTokenDto(string Token, DateTime ExpiresAtUtc);
+
+    // Login/Register-er response body. Token nijei body-te jay na — shudhu HttpOnly cookie-te.
+    public record AuthResponseDto(DateTime ExpiresAtUtc);
+
     // Client ke ja ferot pathabo
     // NOTE: Password ferot pathano hocche shudhu shekhar jonno (tumi dekhte chaile).
     // Real project-e password KOKHONO response-e jabe na.

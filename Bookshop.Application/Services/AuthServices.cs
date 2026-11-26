@@ -8,10 +8,12 @@ namespace Bookshop.Application.Services
     public class AuthServices : IAuthServices
     {
         private readonly IUserRepository _userRepository;
+        private readonly IPasswordHasher _passwordHasher;
 
-        public AuthServices(IUserRepository userRepository)
+        public AuthServices(IUserRepository userRepository, IPasswordHasher passwordHasher)
         {
             _userRepository = userRepository;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<UserResponseDto?> RegisterAsync(RegisterDto register)
@@ -29,7 +31,7 @@ namespace Bookshop.Application.Services
             {
                 Name = register.Name.Trim(),
                 Email = email,
-                Password = register.Password, // Porer step-e ekhane hash hobe
+                Password = _passwordHasher.Hash(register.Password), // Plain password na, hash save hobe
                 Role = UserRole.User          // Register korle sobai "User". Admin ashbe seeding theke
             };
 
@@ -43,7 +45,8 @@ namespace Bookshop.Application.Services
 
             // User nai ba password mile nai -> dui khetrei same result (null)
             // Ke "email vul" naki "password vul" ta bole dile hacker shubidha pay
-            if (user is null || user.Password != login.Password)
+            // Hash abar plain-e ferot ana jay na, tai Verify diye milai
+            if (user is null || !_passwordHasher.Verify(user.Password, login.Password))
             {
                 return null;
             }
